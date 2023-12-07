@@ -58,7 +58,7 @@ fn main() {
             match event {
                 Event::Quit { .. } | Event::KeyDown { keycode: Some(Keycode::Q), .. } => break 'gameloop, // Q - Quit
                 Event::KeyDown { keycode: Some(Keycode::Escape), .. } => break 'gameloop, // Esc - Quit
-                Event::KeyDown { keycode: Some(Keycode::R), .. } => { // R - Reset coordinate
+                Event::KeyDown { keycode: Some(Keycode::R), .. } => { // R - Reset coordinate space to default
                     complex_space.zoom_factor = 1.0;
                     complex_space.real_minimun = -2.0;
                     complex_space.real_maximun = 1.0;
